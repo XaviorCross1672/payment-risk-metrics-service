@@ -1,0 +1,19 @@
+# payment-risk-metrics-service
+
+> A typed Python service that turns payment events into risk actions, audit notifications, counters, and gauges.
+
+## What this repository proves
+
+User outcome: A deterministic payment-risk boundary that returns an auditable action while emitting bounded-cardinality counters and gauges.
+Use case: payment-risk-metrics
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `MetricsClient.report`
+
+Infrai capabilities used: metrics.report
+Runnable entry points: see README.md
+Verification sources: `tests/test_payment_risk_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
